@@ -1,0 +1,273 @@
+:root {
+     --primary: 213, 52%, 29%;
+     /* --secondary: 224, 66%, 7%; */
+     /* --secondary: 215, 88%, 13%; */
+     --secondary: 144, 100%, 6%;
+     /* --secondary: 183, 43%, 11%; */
+     --accent: 323, 65%, 67%;
+     --background: 60, 4%, 5%;
+     --text: 0, 60%, 99%;
+     /* --text: 323, 17%, 91%; */
+     --danger: 0, 62%, 47%;
+     --success: 119, 64%, 69%;
+}
+body {
+     background-color: hsla(var(--background), 1);
+     color: hsla(var(--text), 1);
+}
+.marginy-100 {
+     margin-top: 100px;
+     margin-bottom: 100px;
+}
+#session > .container {
+     width: 1080px;
+}
+.screen-card {
+     height: 80vh;
+     margin-top: 90px;
+     margin-bottom: 90px;
+     background-image: radial-gradient(farthest-corner at top, hsla(var(--primary), .75), hsla(var(--secondary), 1));
+     border-radius: 10px;
+}
+.height-100 {
+     height: 100%;
+}
+.paddingx-60 {
+     padding:0px 60px;
+}
+.mt-100 {
+     margin-top: 100px;
+}
+.feature {
+     background-image: linear-gradient(to bottom left, hsla(var(--accent), 1), hsla(var(--primary), 1));
+     border-radius: 10px 0px 0px 10px;
+     height: 100%;
+}
+.feature > svg {
+     display: block;
+     margin: auto;
+     height: 90%;
+     width: 348px;
+}
+.session {
+     margin-top: 80px;
+}
+.session > .header > svg {
+     display: block;
+     margin: auto;
+     height: 100%;
+     width: 200px;
+}
+.group-input {
+     margin-top: 40px;
+     margin-bottom: 0px;
+     height: 40px;
+     padding: 0px;
+     border-bottom: solid 1px hsla(var(--text), 1);
+}
+.group-input > span > svg {
+     height: 100%;
+     width: 10%;
+     padding-bottom: 10px;
+     margin: 0px;
+}
+.group-input > input {
+     border: none;
+     background-color: inherit;
+     margin: 0px;
+     padding: 0px;
+     padding-left: 5px;
+     color: hsla(var(--text), 1);
+     height: 100%;
+     width: 88%;
+}
+textarea:focus, input:focus {
+     outline: none;
+}
+.button {
+     width: 20%;
+     padding: 10px;
+     border: none;
+     border-radius: 50px;
+     color: hsla(var(--text), 1);
+     margin-bottom: 20px;
+     margin-top: 40px;
+}
+.button-wide {
+     width: 100%;
+     padding: 10px;
+     border: none;
+     
+     border-radius: 50px;
+     color: hsla(var(--text), 1);
+     margin-bottom: 20px;
+     margin-top: 40px;
+}
+
+.button-primary {
+     background-color: hsla(var(--primary), 1);
+}
+
+.button-background {
+     background-color: hsla(var(--background), 1);
+}
+
+.button-accent-outline {
+     background-color: inherit;
+     border: 3px solid hsla(var(--accent), .5)
+}
+
+a {
+     text-decoration: none;
+     color: hsla(var(--accent), 1)
+}
+.danger {
+     color: hsla(var(--danger), 1);
+}
+
+nav {
+     width: 100%;
+     height: 100vh;
+     border-right: 1px solid hsla(var(--text), .3); 
+     /* background-image: radial-gradient(farthest-corner at top left, hsla(var(--primary), .75), hsla(var(--secondary), 1)); */
+     padding-top: 70px;
+     padding-left: 10px;
+     padding-right: 20px;
+}
+
+nav > a {
+     color: inherit;
+}
+
+.navlink {
+     height: 70px;
+     margin-top: 10px;
+}
+
+nav > a > .active {
+     background-color: hsla(var(--primary), .4);
+     border-radius: 20px;
+}
+
+.navlink > span {
+     line-height: 70px;
+     font-size: 24px;
+     font-weight: medium;
+}
+
+.text-color {
+     color: hsla(var(--text), 1);
+}
+
+.navlink > span > svg {
+     display: inline;
+     height: 100%;
+     width: 9%;
+     margin-left: 12px;
+     margin-right: 10px;
+     padding-bottom: 10px;
+}
+
+.dropdown-text {
+     width: 100px;
+}
+
+.dropdown-button {
+     width: 100%;
+}
+
+.dropdown-icon {
+     display: inline;
+     height: 100%;
+     width: 9%;
+     margin-left: 12px;
+     margin-right: 10px;
+     padding-bottom: 10px;
+}
+
+button.logout{
+     background-color: inherit;
+     height: 100%;
+     width: 100%;
+     border: none;
+     text-align: left;
+}
+
+.dropdownlink {
+     height: 40px;
+     border-top: 1px solid hsla(var(--text), .3);
+}
+
+.dropdownlink > span {
+     line-height: 40px;    
+     font-size: 20px;
+     font-weight: medium;
+}
+
+.paddings-60 {
+     padding-left: 60px;
+}
+
+.profile-card {
+     height: 100;
+     margin: 0;
+     background-image: radial-gradient(ellipse at bottom left, hsla(var(--primary), 1), hsla(var(--background), 1));
+     border-radius: 50px;
+}
+
+.profile-card > svg {
+     width: 250px;
+     height: 250px;
+}
+
+.paddingx-100 {
+     padding-left: 100px;
+     padding-right: 100px;
+}
+
+.about-me {
+     height: 50%;
+     background-image: radial-gradient(ellipse at bottom left, hsla(var(--secondary), 1), hsla(var(--background), 1));
+     margin: 0px 10px 10px 30px;
+     border-radius: 50px;
+}
+
+.about-me > p {
+     height: 55%;
+}
+
+.comment {
+     height: 44%;
+     border: 5px solid hsla(var(--accent), .5);
+     margin: 0px 10px 0px 30px;
+     border-radius: 50px;
+}
+
+.comment > p {
+     height: 45%;
+}
+
+.card-height {
+     height: 90vh;
+}
+
+.user-input {
+     background-color: inherit;
+     border: none;
+     border-bottom: 1px solid hsla(var(--text), .5);
+     height: 40px;
+     padding-bottom: 7px;
+     padding-left: 0px;
+     margin-bottom: 0;
+}
+
+.username-input {
+     background-color: inherit;
+     border: none;
+     width: 100%;
+     text-align: center;
+     color: white;
+     margin-bottom: 0px;
+     margin-top: 0px;
+     height: 48px;
+}

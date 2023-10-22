@@ -108,6 +108,10 @@ textarea:focus, input:focus {
      background-color: hsla(var(--primary), 1);
 }
 
+.button-accent {
+     background-color: hsla(var(--accent), 1);
+}
+
 .button-background {
      background-color: hsla(var(--background), 1);
 }
@@ -126,8 +130,7 @@ a {
 }
 
 nav {
-     width: 100%;
-     height: 100vh;
+     width: 50vh;
      border-right: 1px solid hsla(var(--text), .3); 
      /* background-image: radial-gradient(farthest-corner at top left, hsla(var(--primary), .75), hsla(var(--secondary), 1)); */
      padding-top: 70px;
@@ -175,6 +178,11 @@ nav > a > .active {
 .dropdown-button {
      width: 100%;
 }
+
+.dropdown-active {
+     background-color: hsla(var(--primary), .7);
+}
+
 
 .dropdown-icon {
      display: inline;
@@ -232,8 +240,25 @@ button.logout{
      border-radius: 50px;
 }
 
-.about-me > p {
-     height: 55%;
+.aboutfield {
+     height: 200px;
+}
+
+.commentfield {
+     height: 130px;
+}
+
+textarea.field {
+     border: dashed 1px hsl(var(--text), .2) ;
+}
+
+.field {
+     background-color: inherit;
+     padding: 10px;
+     margin: 0px;
+     color: inherit;
+     width: 100%;
+     resize: none;
 }
 
 .comment {
@@ -241,10 +266,6 @@ button.logout{
      border: 5px solid hsla(var(--accent), .5);
      margin: 0px 10px 0px 30px;
      border-radius: 50px;
-}
-
-.comment > p {
-     height: 45%;
 }
 
 .card-height {
@@ -266,8 +287,68 @@ button.logout{
      border: none;
      width: 100%;
      text-align: center;
-     color: white;
+     color: hsla(var(--text), 1);
      margin-bottom: 0px;
      margin-top: 0px;
      height: 48px;
+}
+
+.about {
+     height: 90vh;
+}
+
+
+.calculator {
+     height: 90vh;
+     background-image: radial-gradient(farthest-corner at top left, hsla(var(--primary), 1), hsla(var(--secondary), .5));
+     border-radius: 50px;
+}
+
+.calculator-input {
+     background-color: hsla(var(--background), 1);
+     border: none;
+     border-radius: 20px;
+     padding-left: 20px;
+     width: 100%;
+     height: 90px;
+     color: hsla(var(--text), 1);
+     font-size: 32px;
+}
+
+.calculator-number > svg {
+     height: 80px;
+}
+
+.calculator-button {
+     height: 200px;
+     width: 90%;
+     background: inherit;
+     border: 15px solid hsla(var(--accent), 1);
+     border-radius: 25px;
+     font-size: 100px;
+     color: hsla(var(--accent), 1);
+     transition: .3s;
+}
+
+.calculator-button:hover {
+     background: hsla(var(--accent), .5);
+     border: none;
+     color: hsla(var(--text), 1);  
+}
+
+.m-100 {
+     margin-top: 100px;
+}
+
+.average-title {
+     font-size: 50px;
+}
+
+.average-result {
+     margin-top: 0px;
+     font-size: 350px;
+}
+
+textarea {
+     resize: none;
 }

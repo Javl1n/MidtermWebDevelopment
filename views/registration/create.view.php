@@ -1,5 +1,5 @@
 <?php 
-     require_once base_path("views/partials/head.partial.php");
+     require_once base_path("views/partials/title.partial.php");
 ?>
 
 <div id="session">
@@ -19,24 +19,30 @@
                          <div class="row">
                               <form action="/registration" method="post">
                                    <div class="group-input">
-                                        <span><?= file_get_contents('src/svg/one-outline.svg'); ?></span>
-                                        <input name="fullName" type="text" placeholder="Full Name" value="<?= isset($_POST['fullName']) ? htmlspecialchars($_POST['fullName']) : '' ?>" required>
+                                        <span><?= file_get_contents('src/svg/1-outline.svg'); ?></span>
+                                        <input name="fullName" type="text" placeholder="Full Name"
+                                             value="<?= isset($_POST['fullName']) ? htmlspecialchars($_POST['fullName']) : '' ?>"
+                                             required>
                                         <div class="danger"><?= $errors['fullName'] ?? '' ?></div>
                                    </div>
                                    <div class="group-input">
-                                        <span><?= file_get_contents('src/svg/two-outline.svg'); ?></span>
-                                        <input name="username" type="text" placeholder="Username" value="<?= isset($_POST['username']) ? htmlspecialchars($_POST['username']) : '' ?>" required>
+                                        <span><?= file_get_contents('src/svg/2-outline.svg'); ?></span>
+                                        <input name="username" type="text" placeholder="Username"
+                                             value="<?= isset($_POST['username']) ? htmlspecialchars($_POST['username']) : '' ?>"
+                                             required>
                                         <div class="danger"><?= $errors['username'] ?? '' ?></div>
                                    </div>
                                    <div class="group-input">
-                                        <span><?= file_get_contents('src/svg/three-outline.svg'); ?></span>
+                                        <span><?= file_get_contents('src/svg/3-outline.svg'); ?></span>
                                         <input name="password" type="password" placeholder="Password" required>
                                         <div class="danger"><?= $errors['password'] ?? '' ?></div>
                                    </div>
-                                   <button type="submit" name="submit" class="button-wide button-primary fw-semibold fs-5">
+                                   <button type="submit" name="submit"
+                                        class="button-wide button-primary fw-semibold fs-5">
                                         Register
                                    </button>
-                                   <p class="text-center">Already have an account? <a class="fw-semibold" href="/session">Login</a></p>
+                                   <p class="text-center">Already have an account? <a class="fw-semibold"
+                                             href="/session">Login</a></p>
                               </form>
                          </div>
                     </div>

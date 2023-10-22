@@ -10,9 +10,14 @@ class Validator
 
           return strlen($value) >= $min && strlen($value) <= $max;
      }
+     public static function int($value)
+     {
+          return is_numeric($value);
+     }
 
      public static function email($value)
      {
           return filter_var($value, FILTER_VALIDATE_EMAIL);
      }
+     
 }

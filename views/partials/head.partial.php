@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title><?= $title ?> - Midterm Website</title>
-     <link rel="stylesheet" href="/src/styles/bootstrap/bootstrap.min.css">
-     <link rel="stylesheet" href="/src/styles/app.css">
-</head>
-<body>
+<?php
+     require_once base_path("views/partials/title.partial.php");
+?>
+
+<body class="vh-100">
+     <div class="container-fluid h-100">
+          <div class="row h-100">
+               <div class="col-3">
+                    <?php
+               require_once base_path("views/partials/nav.partial.php");
+          ?>
+               </div>
+               <div class="col-9">

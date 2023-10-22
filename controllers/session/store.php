@@ -33,9 +33,9 @@ if(!empty($errors)) {
 }
 
 login([
-     'username' => $username
+     'username' => $username,
+     'id' => $usernameQuery['id']
 ]);
 
 header('location: /');
 exit();
-

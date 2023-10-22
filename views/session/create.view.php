@@ -1,5 +1,5 @@
 <?php 
-     require_once base_path("views/partials/head.partial.php");
+     require_once base_path("views/partials/title.partial.php");
 ?>
 
 <div id="session">

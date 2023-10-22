@@ -39,8 +39,13 @@ $db->query('INSERT INTO user(full_name, username, password) VALUES (:fullName, :
      'fullName' => $fullName,
 ]);
 
+$user_id = $db->query('SELECT id FROM user WHERE username = :username', [
+     'username'=> $username,
+]);
+
 login([
-     'username' => $username
+     'username' => $username,
+     'id' => $user_id
 ]);
 
 header('location: /');
